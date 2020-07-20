@@ -5,6 +5,3 @@ eureka:
 spring:
   application:
     name: travelshopcartservice
-feign:
-  hystrix:
-    enabled: true
