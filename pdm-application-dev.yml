@@ -1,0 +1,18 @@
+server:
+  port: 8763
+spring:
+  redis:
+    host: localhost
+    database: 0
+    port: 6379
+  datasource:
+    name: mysql
+    url: jdbc:mysql://localhost:3306/user?ullNamePatternMatchesAll=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  #扫描哪个包下的mapper映射文件
+  mapper-locations: classpath:mapper/*.xml
+  #type-aliases-package: com.mr.test_orderclass.po
