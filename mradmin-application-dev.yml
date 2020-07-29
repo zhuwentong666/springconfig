@@ -1,12 +1,9 @@
 server:
   port: 8762
 spring:
- redis:
-    # 数据库标识，可以配置多个 redis使用不同的标识区分
+  redis:
+    host: localhost
     database: 0
-    # redisIP地址
-    host: 127.0.0.1
-    # redis端口号
     port: 6379
    
   datasource:
